@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Todo list</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <script src="scripts/vendor/modernizr.js"></script>
+</head>
+<body>
+  <!--[if lt IE 10]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+  <div class="container-fluid">
+    <div class="row">
+      <main class="col-sm-6 col-sm-offset-3" role="main">
+        <header class="app-header text-center">
+          <h1>todos</h1>
+        </header>
+        <ul class="list-group list-todo">
+          <li class="list-group-item todo-header">
+            <div class="input-group input-group-lg">
+              <div class="input-group-btn"></div>
+              <input type="text" class="form-control input-add-task" placeholder="Add a task">
+              <div class="input-group-btn">
+                <button class="btn-add-task btn btn-default" type="button">+</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="list-group-item todo-footer">
+            <div class="text-center">
+              <span class="todo-count"></span>
+              <div class="btn-group task-filter-group" role="group" aria-label="Filter Tasks">
+                <button type="button" class="task-filter btn btn-default active" data-filter="all">All</button>
+                <button type="button" class="task-filter btn btn-default" data-filter="open">Open</button>
+                <button type="button" class="task-filter btn btn-default" data-filter="completed">Completed</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <footer class="app-footer text-center"><p>♥ from attilac - fend16</p></footer>
+  </div>
+
+    <script src="scripts/helper-functions.js"></script>
+    <script src="scripts/todo-list.js"></script>
+    <script src="scripts/task.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
