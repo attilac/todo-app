@@ -1,2 +1,3 @@
-# todo-app
-todo-app fend16
+# Examination - ToDo-app
+
+En todo lista
